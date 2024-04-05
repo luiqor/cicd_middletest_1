@@ -5,7 +5,10 @@ def read_file(input_file: str) -> str:
 
 
 def count_words(words: str) -> dict:
-    pass
+    word_count = {}
+    for word in words:
+        word_count[word] = word_count.get(word, 0) + 1
+    return word_count
 
 
 def get_top_10_words(word_count: dict, number_of_words: int = 10) -> dict:
