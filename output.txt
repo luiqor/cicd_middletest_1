@@ -1,0 +1,10 @@
+the: 4
+ut: 3
+in: 3
+quick: 2
+brown: 2
+fox: 2
+jumps: 2
+over: 2
+lazy: 2
+dog: 2
