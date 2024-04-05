@@ -1,3 +1,6 @@
+import os
+
+
 def read_file(input_file: str) -> str:
     """Reads the file and returns the text in lowercase.
     Args:
@@ -65,4 +68,6 @@ def main(input_file, output_file):
 
 
 if __name__ == '__main__':
-    main('input.txt', 'output.txt')
+    input_file = os.path.join('files', 'input.txt')
+    output_file = os.path.join('files', 'output.txt')
+    main(input_file, output_file)

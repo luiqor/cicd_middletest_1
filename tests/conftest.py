@@ -6,13 +6,13 @@ import pytest
 def prepare_text_file(tmp_path):
     target_file = os.path.join(tmp_path, 'test.txt')
     with open(target_file, 'w') as file:
-        lines = ["Hello world dear python\n",
-                 "Hello world dear python\n",
-                 "Hello world dear\n",
-                 "Hello world\n",
-                 "Hello world\n",
-                 "Hello world\n",
-                 "Bb world",]
+        lines = ['Hello world dear python\n',
+                 'Hello world dear python\n',
+                 'Hello world dear\n',
+                 'Hello world\n',
+                 'Hello world\n',
+                 'Hello world\n',
+                 'Bb world',]
         file.writelines(lines)
     return target_file
 
