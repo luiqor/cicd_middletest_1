@@ -6,7 +6,8 @@ from main import count_words
     "words, expected_output",
     [
         (["hello", "world", "hello"], {"hello": 2, "world": 1}),
-        (["one", "one", "two", "three", "three", "three"], {"one": 2, "two": 1, "three": 3}),
+        (["one", "one", "two", "three", "three", "three"],
+         {"one": 2, "two": 1, "three": 3}),
         ([], {}),
         (["single"], {"single": 1}),
         (["duplicate", "duplicate"], {"duplicate": 2}),

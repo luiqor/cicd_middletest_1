@@ -15,3 +15,8 @@ def prepare_text_file(tmp_path):
                  "Bb world",]
         file.writelines(lines)
     return target_file
+
+
+@pytest.fixture(autouse=True)
+def prepare_output_file(tmp_path):
+    return os.path.join(tmp_path, 'output.txt')
