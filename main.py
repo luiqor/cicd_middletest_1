@@ -1,5 +1,7 @@
 def read_file(input_file: str) -> str:
-    pass
+    with open(input_file, 'r') as file:
+        text = file.read().lower()
+    return text
 
 
 def count_words(words: str) -> dict:
@@ -11,7 +13,9 @@ def get_top_10_words(word_count: dict, number_of_words: int = 10) -> dict:
 
 
 def write_to_file(output_file: str, top_10_words: dict) -> None:
-    pass
+    with open(output_file, 'w') as output:
+        for word, count in top_10_words:
+            output.write(f"{word}: {count}\n")
 
 
 def main(input_file, output_file):
