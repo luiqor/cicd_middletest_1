@@ -11,7 +11,7 @@ def count_words(words: list) -> dict:
     return word_count
 
 
-def get_top_10_words(word_count: dict, number_of_words: int = 10) -> dict:
+def get_top_of_words(word_count: dict, number_of_words: int = 10) -> dict:
     sorted_word_count = sorted(word_count.items(),
                                key=lambda x: x[1],
                                reverse=True)
@@ -31,7 +31,7 @@ def main(input_file, output_file):
     words = text.split()
     word_count = count_words(words)
 
-    top_10_words = get_top_10_words(word_count, 10)
+    top_10_words = get_top_of_words(word_count, 10)
 
     write_to_file(output_file, top_10_words)
 
