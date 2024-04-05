@@ -12,7 +12,11 @@ def count_words(words: str) -> dict:
 
 
 def get_top_10_words(word_count: dict, number_of_words: int = 10) -> dict:
-    pass
+    sorted_word_count = sorted(word_count.items(),
+                               key=lambda x: x[1],
+                               reverse=True)
+    top_10_words = sorted_word_count[:number_of_words]
+    return top_10_words
 
 
 def write_to_file(output_file: str, top_10_words: dict) -> None:
