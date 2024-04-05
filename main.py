@@ -4,7 +4,7 @@ def read_file(input_file: str) -> str:
     return text
 
 
-def count_words(words: str) -> dict:
+def count_words(words: list) -> dict:
     word_count = {}
     for word in words:
         word_count[word] = word_count.get(word, 0) + 1
